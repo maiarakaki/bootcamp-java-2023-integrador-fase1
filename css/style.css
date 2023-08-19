@@ -13,7 +13,7 @@
 }
 
 .axis-txt {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.1rem;
 }
 
@@ -91,8 +91,10 @@ footer a{
     }
 
     .axis-img{
-        width: 150px;
-        height: 150px;
+        min-width:146px;
+        max-width: 150px;
+        min-height:146px;
+        max-height: 150px;
     }
 
     #socials, #address, #slogan-img{
