@@ -88,28 +88,36 @@
         </div>
     </main>
     <footer>
-        <div class="row mx-5 ">
-            <h2 class="b-highlight">Escribinos</h2>
-            <div class="col-sm-12">
+        <div class="row mx-5 my-2">
+            <h2 class="my-sm-2"> <span class="b-highlight ps-1 pe-3">Escribinos</span></h2>
+            <div class="col-sm-12 my-sm-2">
                 <!-- formulario -->
                 <form action="">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mt-3">
                         <input type="text" class="form-control" id="form-name" placeholder="Nombre completo" required>
                         <label for="form-name">Nombre</label>
                     </div>
-                    <div class="form-floating mb-3">
+                    <div class="invalid-feedback">
+                        Por favor ingrese su nombre.
+                     </div>
+                    <div class="form-floating mt-3">
                         <input type="email" class="form-control" id="form-email" placeholder="alguien@ejemplo.com" required>
                         <label for="form-email">Email</label>
                     </div>
-                    <div class="form-floating">
-                        <textarea  class="form-control" id="form-message" placeholder="Escriba su mensaje aquí" rows="3" required></textarea>
+                    <div class="invalid-feedback">
+                        Por favor ingrese su email.
+                     </div>
+                    <div class="form-floating  mt-3">
+                        <textarea  class="form-control" id="form-message" placeholder="Escriba su mensaje aquí" required></textarea>
                         <label for="form-message">Mensaje</label>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-
+                    <div class="invalid-feedback">
+                        Por favor incluya un mensaje.
+                     </div>
+                    <button type="submit" class="btn btn-primary mt-3">Enviar</button>
                 </form>
             </div>
-            <div class="col">
+            <div class="col my-sm-3">
                 <div>
                     <p>Manzoni 1360,
                         González Catán <br>

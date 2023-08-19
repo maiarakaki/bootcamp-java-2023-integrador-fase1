@@ -27,12 +27,19 @@
 
 footer{
     background-color: var(--footer-color);
-    /* color:white; */
 }
 
 
 footer p {
     color:white;
+}
+
+#form-message{
+    height: 6rem;
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
 }
 
 @media screen and (max-width:768px){
