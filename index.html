@@ -39,61 +39,63 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="row heading-container d-flex">
+    <main class="poppins">
+        <div class="row heading-container d-flex mb-5">
             <div class="col-12 d-flex align-items-end justify-content-end">
-                <div class="row">
-                    <p>Trabajamos</p>
-                </div>
-                <div class="row">
-                    <p>por una gran causa</p>
+                <div id="slogan" class="text-center mb-3 me-2">
+                    <div class="g-highlight">
+                        Trabajamos
+                    </div>
+                    <div>
+                        por una gran causa
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row px-5 text-center">
+        <div class="row px-5 text-center mt-2 mb-3">
             <p>GC es una organización sin fines de lucro <span class="b-highlight"> que trabaja
                 para promover el desarrollo integral de niños, niñas y adolescentes a través de la educación,
             </span> articulando los siguientes tres ejes:</p>
+            <div class="row justify-content-center mb-3">
+                <div class="col-sm-3">
+                    <div class="row justify-content-center">
+                        <img class="axis-img" src="/assets/images/crecimiento.svg" alt="">
+                    </div>
+                    <div class="row justify-content-center axis-txt">
+                        Crecimiento
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="row justify-content-center">
+                        <img class="axis-img" src="/assets/images/conocimiento.svg" alt="">
+                    </div>
+                    <div class="row justify-content-center axis-txt">
+                        Conocimiento
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="row justify-content-center">
+                        <img class="axis-img" src="/assets/images/companerismo.svg" alt="">
+                    </div>
+                    <div class="row justify-content-center axis-txt">
+                        Compañerismo
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row mx-5 justify-content-center">
-            <div class="col-sm-3">
-                <div class="row justify-content-center">
-                    <img class="axis-img" src="/assets/images/crecimiento.svg" alt="">
-                </div>
-                <div class="row justify-content-center">
-                    Crecimiento
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="row justify-content-center">
-                    <img class="axis-img" src="/assets/images/conocimiento.svg" alt="">
-                </div>
-                <div class="row justify-content-center">
-                    Conocimiento
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="row justify-content-center">
-                    <img class="axis-img" src="/assets/images/companerismo.svg" alt="">
-                </div>
-                <div class="row justify-content-center">
-                    Compañerismo
-                </div>
-            </div>
-        </div>
-        <div class="row mx-5 text-center">
+        <div class="row mx-5 text-center mb-5">
             <h1>Proyecto GC</h1>
             <div class="ratio ratio-21x9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4a1-2oGlvHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4a1-2oGlvHI" title="YouTube video player"  allowfullscreen></iframe>
             </div>
         </div>
     </main>
     <footer>
         <div class="row mx-5 my-2">
-            <h2 class="my-sm-2"><span class="b-highlight ps-1 pe-3">Escribinos</span></h2>
+            <h2 class="mt-sm-4"><span class="b-highlight ps-1 pe-3">Escribinos</span></h2>
             <div class="col-sm-12 my-sm-2">
                 <!-- formulario -->
-                <form>
+                <form action="form.php" method="post">
                     <div class="form-floating mt-3">
                         <input type="text" class="form-control" id="form-name" placeholder="Nombre completo" required>
                         <label for="form-name">Nombre</label>
@@ -114,8 +116,8 @@
                     </div>
                     <div class="invalid-feedback" id="message-feedback">
                         Por favor incluya un mensaje menor a 200 caracteres.
-                     </div>
-                     <div id="message-help" class="form-text">¿Cómo podemos ayudarte? <span id="char-counter">0</span>/<span id="max-chars">200</span>.</div>
+                    </div>
+                    <div id="message-help" class="form-text">¿Cómo podemos ayudarte? <span id="char-counter">0</span>/<span id="max-chars">200</span>.</div>
                     <button type="submit" class="btn btn-primary mt-3">Enviar</button>
                 </form>
             </div>
@@ -125,8 +127,6 @@
                         González Catán <br>
                         Buenos Aires Provincia <br>
                         Tel. 11 7102 6887 <br>
-                    </p>
-                    <p>
                         <a href="mailto:info@proyectogc.org">info@proyectogc.org</a>
                     </p>
                 </div>

@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 :root{
     /* colors */
     --primary-color: #3092FC;
     --secondary-color: #70BF44;
     --tertiary-color: #E8E6E6;
     --footer-color: #4c4d4f;
+}
+
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+.axis-txt {
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 .nav-item a{
@@ -29,7 +40,6 @@ footer{
     background-color: var(--footer-color);
 }
 
-
 footer p {
     color:white;
 }
@@ -40,6 +50,15 @@ footer p {
 
 .btn-primary{
     background-color: var(--primary-color);
+}
+
+#message-help{
+    color:white;
+}
+
+#slogan{
+    width:30%;
+    font-weight: 600;
 }
 
 @media screen and (max-width:768px){
