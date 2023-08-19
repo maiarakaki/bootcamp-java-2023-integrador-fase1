@@ -36,4 +36,9 @@
         background-position: center;
         height: 20vh;
     }
+
+    .axis-img{
+        width: 150px;
+        height: 150px;
+    }
 }
