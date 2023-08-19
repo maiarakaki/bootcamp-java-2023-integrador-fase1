@@ -73,6 +73,10 @@ footer a{
     color: #41667C;
 }
 
+.fa-brands{
+    width: 50px;
+}
+
 @media screen and (max-width:768px){
     #org-logo {
         max-width: 3.5rem;
