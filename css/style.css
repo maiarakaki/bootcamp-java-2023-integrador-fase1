@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    /* colors */
+    --primary-color: #3092FC;
+    --secondary-color: #70BF44;
+    --tertiary-color: #E8E6E6;
+    --footer-color: #4c4d4f;
+}
+
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+.axis-txt {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color:black;
+}
+
+.nav-item a:visited {
+    color:black;
+}
+
+.g-highlight{
+    background-color: var(--secondary-color);
+    color:white;
+}
+
+.b-highlight{
+    background-color: var(--primary-color);
+    color:white;
+}
+
+footer{
+    background-color: var(--footer-color);
+    font-weight: 100;
+}
+
+footer p {
+    color:white;
+}
+
+footer a{
+    color: var(--secondary-color);
+    font-weight: 300;
+}
+
+#form-message{
+    height: 6rem;
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+}
+
+#message-help{
+    color:white;
+}
+
+#slogan{
+    width:35%;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#video-container h1{
+    font-weight: bold;
+    color: #41667C;
+}
+
+.fa-brands{
+    width: 50px;
+}
+
+@media screen and (max-width:768px){
+    #org-logo {
+        max-width: 3.5rem;
+    }
+
+    .heading-container {
+        background-image: url(/assets/images/sarasa.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 20vh;
+    }
+
+    .axis-img{
+        min-width:146px;
+        max-width: 150px;
+        min-height:146px;
+        max-height: 150px;
+    }
+
+    #socials, #address, #slogan-img{
+        text-align: center;
+    }
+}

@@ -4,11 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabajo Integrador - Proyecto GC</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/companerismo.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <header>
+        <nav class="navbar navbar-expand-md poppins">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">
+                    <img id="org-logo" src="/assets/images/logoGC_slogan.png.webp">
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navigation-items">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navigation-items" class="collapse navbar-collapse">
+                    <div class="navbar-nav">
+                        <div class="nav-item my-1">
+                            <a href="./html/about.html">Quiénes Somos</a>
+                        </div>
+                        <div class="nav-item my-1">
+                            <a href="/html/project.html">Proyecto</a>
+                        </div>
+                        <div class="nav-item my-1">
+                            <a href="/html/activities.html">Actividades</a>
+                        </div>
+                        <div class="nav-item my-1">
+                            <a href="/html/engage.html">Colaborar</a>
+                        </div>
+                        <div class="nav-item my-1">
+                            <a href="/html/enroll.html">Inscripciones</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="poppins">
+        <div class="row heading-container d-flex mb-5">
+            <div class="col-12 d-flex align-items-end justify-content-end">
+                <div id="slogan" class="text-center mb-3 me-2">
+                    <div class="g-highlight">
+                        Trabajamos
+                    </div>
+                    <div>
+                        por una gran causa
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row px-5 text-center mt-2 mb-3">
+            <p>GC es una organización sin fines de lucro <span class="b-highlight"> que trabaja
+                para promover el desarrollo integral de niños, niñas y adolescentes a través de la educación,
+            </span> articulando los siguientes tres ejes:</p>
+            <div class="row justify-content-between mb-3">
+                <div class="col-sm-3">
+                    <div class="row justify-content-center">
+                        <img class="axis-img" src="/assets/images/crecimiento.svg" alt="">
+                    </div>
+                    <div class="row justify-content-center axis-txt">
+                        Crecimiento
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="row justify-content-center">
+                        <img class="axis-img" src="/assets/images/conocimiento.svg" alt="">
+                    </div>
+                    <div class="row justify-content-center axis-txt">
+                        Conocimiento
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="row justify-content-center">
+                        <img class="axis-img" src="/assets/images/companerismo.svg" alt="">
+                    </div>
+                    <div class="row justify-content-center axis-txt">
+                        Compañerismo
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-5 text-center mb-5" id="video-container">
+            <h1>Proyecto GC</h1>
+            <div class="ratio ratio-21x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4a1-2oGlvHI" title="YouTube video player"  allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+    <footer class="poppins">
+        <div class="row mx-5 my-2">
+            <h2 class="mt-sm-4">
+                <span class="b-highlight ps-1 pe-3">
+                    Escribinos</span>
+            </h2>
+            <div class="col-sm-12 my-sm-2">
+                <!-- formulario -->
+                <form action="form.php" method="post">
+                    <div class="form-floating mt-3">
+                        <input type="text" class="form-control" id="form-name" placeholder="Nombre completo" required>
+                        <label for="form-name">Nombre</label>
+                    </div>
+                    <div class="invalid-feedback">
+                        Por favor ingrese su nombre.
+                     </div>
+                    <div class="form-floating mt-3">
+                        <input type="email" class="form-control" id="form-email" placeholder="alguien@ejemplo.com" required>
+                        <label for="form-email">Email</label>
+                    </div>
+                    <div class="invalid-feedback">
+                        Por favor ingrese su email.
+                     </div>
+                    <div class="form-floating  mt-3">
+                        <textarea  class="form-control" id="form-message" placeholder="Escriba su mensaje aquí" maxlength="200" required></textarea>
+                        <label for="form-message">Mensaje</label>
+                    </div>
+                    <div class="invalid-feedback" id="message-feedback">
+                        Por favor incluya un mensaje menor a 200 caracteres.
+                    </div>
+                    <div id="message-help" class="form-text">¿Cómo podemos ayudarte? <span id="char-counter">0</span>/<span id="max-chars">200</span>.</div>
+                    <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                </form>
+            </div>
+            <div class="col-sm-12" id="socials">
+                <div class="row">
+                    <div class="col col-md-1 d-flex justify-content-end justify-content-md-start" id="facebook-link">
+                        <a href="https://www.facebook.com/proyectogc.ong" target="_blank">
+                            <img src="/assets/images/facebook.svg" alt="facebook icon">
+                        </a>
+                    </div>
+                    <div class="col d-flex justify-content-start" id="instagram-link">
+                        <a href="https://www.instagram.com/proyecto.gc/" target="_blank">
+                            <img src="/assets/images/instagram.svg" alt="instagram icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12" id="slogan-img">
+                <img src="https://static.wixstatic.com/media/c28ad8_83aac82f9cc445cc8112f6e3bc954ca5~mv2.png/v1/crop/x_443,y_130,w_458,h_134/fill/w_159,h_45,al_c,q_85,usm_0.33_1.00_0.00,enc_auto/logoGC_slogan.png" alt="">
+            </div>
+            <div class="col my-sm-3" id="address">
+                <div>
+                    <p>Manzoni 1360,
+                        González Catán <br>
+                        Buenos Aires Provincia <br>
+                        Tel. 11 7102 6887 <br>
+                        <a href="mailto:info@proyectogc.org">info@proyectogc.org</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/dfcc5cbe77.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
