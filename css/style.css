@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root{
     /* colors */
@@ -38,10 +38,16 @@
 
 footer{
     background-color: var(--footer-color);
+    font-weight: 100;
 }
 
 footer p {
     color:white;
+}
+
+footer a{
+    color: var(--secondary-color);
+    font-weight: 300;
 }
 
 #form-message{
@@ -83,5 +89,9 @@ footer p {
     .axis-img{
         width: 150px;
         height: 150px;
+    }
+
+    #socials, #address {
+        text-align: center;
     }
 }
