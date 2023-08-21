@@ -20,11 +20,19 @@ formTextArea.addEventListener("keydown", (e)=>{
 
 });
 
+
+//Como aplicar EncodeURIComponent() acá???
 contactForm.addEventListener("submit", (e)=>{
     e.preventDefault();
 
     const inputIsValid = (input) =>{
-        return input.value.length>0;
+        return input.value.trim().length>0;
+    }
+
+    const emailIsValid = (input) =>{
+        let value = input.value;
+        let regexp = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
+        return regexp.test(value);
     }
     
     const displayValid = (input)=>{
@@ -38,11 +46,11 @@ contactForm.addEventListener("submit", (e)=>{
         feedbackDiv.style.display = "block";
     }
 
-    var formName = document.getElementById('form-name');
-    var formEmail = document.getElementById('form-email');
-    var formMessage = document.getElementById('form-message');
+    let formName = document.getElementById('form-name');
+    let formEmail = document.getElementById('form-email');
+    let formMessage = document.getElementById('form-message');
 
     inputIsValid(formName) ? displayValid(formName) : displayInvalid(formName, "invalid-name", "nombre");
-
+    emailIsValid(formEmail) ? displayValid(formEmail) : displayInvalid(formEmail, "invalid-email", "email");
     
 });
