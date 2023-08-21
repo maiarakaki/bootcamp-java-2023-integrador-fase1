@@ -99,23 +99,23 @@
             </h2>
             <div class="col-sm-12 my-sm-2">
                 <!-- formulario -->
-                <form action="form.php" method="post">
+                <form action="form.php" method="post" id="contact-form">
                     <div class="form-floating mt-3">
-                        <input type="text" class="form-control" id="form-name" placeholder="Nombre completo" required>
+                        <input type="text" class="form-control" id="form-name" placeholder="Nombre completo" >
                         <label for="form-name">Nombre</label>
                     </div>
                     <div class="invalid-feedback">
                         Por favor ingrese su nombre.
                      </div>
                     <div class="form-floating mt-3">
-                        <input type="email" class="form-control" id="form-email" placeholder="alguien@ejemplo.com" required>
+                        <input type="email" class="form-control" id="form-email" placeholder="alguien@ejemplo.com" >
                         <label for="form-email">Email</label>
                     </div>
                     <div class="invalid-feedback">
                         Por favor ingrese su email.
                      </div>
                     <div class="form-floating  mt-3">
-                        <textarea  class="form-control" id="form-message" placeholder="Escriba su mensaje aquí" maxlength="200" required></textarea>
+                        <textarea  class="form-control" id="form-message" placeholder="Escriba su mensaje aquí" maxlength="201" ></textarea>
                         <label for="form-message">Mensaje</label>
                     </div>
                     <div class="invalid-feedback" id="message-feedback">
