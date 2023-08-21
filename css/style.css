@@ -119,6 +119,9 @@ footer a{
 }
 
 @media screen and (min-width: 768px) {
+    #slogan{
+        color:white;
+    }
     .heading-container {
         background-image: url(/assets/images/heading-bkg-md.jpeg); 
         background-position: top;
@@ -128,11 +131,20 @@ footer a{
         border: 1px solid var(--blue-buttons-color);
         font-variant: small-caps;
         text-decoration: none;
+        text-align: center;
     }
 
     .nav-md-btn:hover{
         background-color: var(--blue-buttons-color);
         color:white;
+    }
+
+    .nav-md-btn {
+        border-top-left-radius: 30%;
+        border-bottom-right-radius: 30%;
+        border-top-right-radius: 5%;
+        border-bottom-left-radius: 5%;
+        font-size: 1.2rem;
     }
 
 }
