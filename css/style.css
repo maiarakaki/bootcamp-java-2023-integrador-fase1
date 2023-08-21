@@ -23,10 +23,6 @@
     color:black;
 }
 
-.navbar-nav a:visited {
-    color:black;
-}
-
 .g-highlight{
     background-color: var(--secondary-color);
     color:white;
@@ -112,8 +108,12 @@ footer a{
         max-width: 4.5rem;
     }
 
+    .nav-item {
+        padding-left: 2vw;
+    }
+
     .nav-item:hover{
-        background-color: #41667C;
+        background-color:var(--tertiary-color);
         color:#3092FC;
     }
 }
@@ -138,6 +138,7 @@ footer a{
         background-color: var(--blue-buttons-color);
         color:white;
     }
+
 
     .nav-md-btn {
         border-top-left-radius: 30%;
