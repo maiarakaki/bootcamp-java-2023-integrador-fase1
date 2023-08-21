@@ -2,6 +2,21 @@ const contactForm = document.getElementById('contact-form');
 const formTextArea = document.querySelector('#form-message');
 const formMaxChars = 200;
 
+const inputIsValid = (input) =>{
+    return input.value.length>0;
+}
+
+const displayValid = (input)=>{
+    input.classList.add("is-valid");
+}
+
+const displayInvalid = (input, id, inputType) => {
+    let feedbackDiv = document.getElementById(id);
+    input.classList.add("is-invalid");
+    input.setCustomValidity(`Por favor ingrese un ${inputType} valido`);
+    feedbackDiv.style.display = "block";
+}
+
 formTextArea.addEventListener("keydown", (e)=>{
     const messageChars = formTextArea.value.length;
     const charCounterSpan = document.querySelector('#char-counter');
@@ -9,7 +24,7 @@ formTextArea.addEventListener("keydown", (e)=>{
     if (messageChars > formMaxChars) {
         formTextArea.classList.add("is-invalid");
         // const invalidDiv = document.getElementsByClassName("invalid-feedback")[2];
-        const feedbackMessage = document.querySelector('#message-feedback');
+        const feedbackMessage = document.querySelector('#invalid-message');
         feedbackMessage.style.display="block";
 
     }
@@ -25,22 +40,12 @@ contactForm.addEventListener("submit", (e)=>{
     var formEmail = document.getElementById('form-email');
     var formMessage = document.getElementById('form-message');
 
-    validateInput(formName);
+    inputIsValid(formName) ? displayValid(formName) : displayInvalid(formName, "invalid-name", "nombre");
+    
     
 });
 
 
-function validateInput(input){
-    let value = input.value;
-
-    if (value.length > 0) {
-        input.classList.add("is-valid");
-        
-    } else{
-        input.classList.add("is-invalid");
-        input.setCustomValidity("Este campo no puede quedar vacio");
-    }
-}
 
 function validateEmail(input){
 
@@ -49,4 +54,3 @@ function validateEmail(input){
 function validateMessage(input){
 
 }
-
