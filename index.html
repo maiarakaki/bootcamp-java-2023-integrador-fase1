@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabajo Integrador - Proyecto GC</title>
     <link rel="icon" type="image/x-icon" href="/assets/images/companerismo.svg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-md poppins">
@@ -20,21 +23,21 @@
                 </button>
                 <div id="navigation-items" class="collapse navbar-collapse">
                     <div class="navbar-nav w-100 justify-content-md-around">
-                        <div class="nav-item my-1 px-md-3 py-md-1 nav-md-btn">
-                            <a href="./html/about.html">Quiénes Somos</a>
-                        </div>
-                        <div class="nav-item my-1 px-md-3 py-md-1 nav-md-btn">
-                            <a href="/html/project.html">Proyecto</a>
-                        </div>
-                        <div class="nav-item my-1 px-md-3 py-md-1 nav-md-btn">
-                            <a href="/html/activities.html">Actividades</a>
-                        </div>
-                        <div class="nav-item my-1 px-md-3 py-md-1 nav-md-btn">
-                            <a href="/html/engage.html">Colaborar</a>
-                        </div>
-                        <div class="nav-item my-1 px-md-3 py-md-1 nav-md-btn">
-                            <a href="/html/enroll.html">Inscripciones</a>
-                        </div>
+                        <a href="./html/about.html" class="nav-item my-1 px-md-3 py-md-1 nav-md-btn">
+                            Quiénes Somos
+                        </a>
+                        <a href="/html/project.html" class="nav-item my-1 px-md-3 py-md-1 nav-md-btn">
+                            Proyecto
+                        </a>
+                        <a href="/html/activities.html" class="nav-item my-1 px-md-3 py-md-1 nav-md-btn">
+                            Actividades
+                        </a>
+                        <a href="/html/engage.html" class="nav-item my-1 px-md-3 py-md-1 nav-md-btn">
+                            Colaborar
+                        </a>
+                        <a href="/html/enroll.html" class="nav-item my-1 px-md-3 py-md-1 nav-md-btn">
+                            Inscripciones
+                        </a>
                     </div>
                     <div class="navbar-nav d-none d-md-flex justify-content-md-around align-items-md-center">
                         <div class="nav-item ">
@@ -67,8 +70,8 @@
         </div>
         <div class="row px-5 text-center mt-2 mb-3">
             <p>GC es una organización sin fines de lucro <span class="b-highlight"> que trabaja
-                para promover el desarrollo integral de niños, niñas y adolescentes a través de la educación,
-            </span> articulando los siguientes tres ejes:</p>
+                    para promover el desarrollo integral de niños, niñas y adolescentes a través de la educación,
+                </span> articulando los siguientes tres ejes:</p>
             <div class="row justify-content-between mb-3">
                 <div class="col-sm-3">
                     <div class="row justify-content-center">
@@ -99,7 +102,8 @@
         <div class="row mx-5 text-center mb-5" id="video-container">
             <h1>Proyecto GC</h1>
             <div class="ratio ratio-21x9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4a1-2oGlvHI" title="YouTube video player"  allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4a1-2oGlvHI"
+                    title="YouTube video player" allowfullscreen></iframe>
             </div>
         </div>
     </main>
@@ -118,22 +122,25 @@
                     </div>
                     <div class="invalid-feedback">
                         Por favor ingrese su nombre.
-                     </div>
+                    </div>
                     <div class="form-floating mt-3">
-                        <input type="email" class="form-control" id="form-email" placeholder="alguien@ejemplo.com" required>
+                        <input type="email" class="form-control" id="form-email" placeholder="alguien@ejemplo.com"
+                            required>
                         <label for="form-email">Email</label>
                     </div>
                     <div class="invalid-feedback">
                         Por favor ingrese su email.
-                     </div>
+                    </div>
                     <div class="form-floating  mt-3">
-                        <textarea  class="form-control" id="form-message" placeholder="Escriba su mensaje aquí" maxlength="200" required></textarea>
+                        <textarea class="form-control" id="form-message" placeholder="Escriba su mensaje aquí"
+                            maxlength="200" required></textarea>
                         <label for="form-message">Mensaje</label>
                     </div>
                     <div class="invalid-feedback" id="message-feedback">
                         Por favor incluya un mensaje menor a 200 caracteres.
                     </div>
-                    <div id="message-help" class="form-text">¿Cómo podemos ayudarte? <span id="char-counter">0</span>/<span id="max-chars">200</span>.</div>
+                    <div id="message-help" class="form-text">¿Cómo podemos ayudarte? <span
+                            id="char-counter">0</span>/<span id="max-chars">200</span>.</div>
                     <button type="submit" class="btn btn-primary mt-3">Enviar</button>
                 </form>
             </div>
@@ -152,7 +159,8 @@
                 </div>
             </div>
             <div class="col-sm-12" id="slogan-img">
-                <img src="https://static.wixstatic.com/media/c28ad8_83aac82f9cc445cc8112f6e3bc954ca5~mv2.png/v1/crop/x_443,y_130,w_458,h_134/fill/w_159,h_45,al_c,q_85,usm_0.33_1.00_0.00,enc_auto/logoGC_slogan.png" alt="">
+                <img src="https://static.wixstatic.com/media/c28ad8_83aac82f9cc445cc8112f6e3bc954ca5~mv2.png/v1/crop/x_443,y_130,w_458,h_134/fill/w_159,h_45,al_c,q_85,usm_0.33_1.00_0.00,enc_auto/logoGC_slogan.png"
+                    alt="">
             </div>
             <div class="col my-sm-3" id="address">
                 <div>
@@ -168,6 +176,9 @@
     </footer>
     <script src="/js/script.js"></script>
     <script src="https://kit.fontawesome.com/dfcc5cbe77.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -6,6 +6,7 @@
     --secondary-color: #70BF44;
     --tertiary-color: #E8E6E6;
     --footer-color: #4c4d4f;
+    --blue-buttons-color:#566fb8;
 }
 
 .poppins{
@@ -17,12 +18,12 @@
     font-size: 1.3rem;
 }
 
-.nav-item a{
+.navbar-nav a{
     text-decoration: none;
     color:black;
 }
 
-.nav-item a:visited {
+.navbar-nav a:visited {
     color:black;
 }
 
@@ -110,6 +111,11 @@ footer a{
     #org-logo {
         max-width: 4.5rem;
     }
+
+    .nav-item:hover{
+        background-color: #41667C;
+        color:#3092FC;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -119,12 +125,14 @@ footer a{
     }
 
     .nav-md-btn {
-        border: 1px solid var(--primary-color);
+        border: 1px solid var(--blue-buttons-color);
+        font-variant: small-caps;
+        text-decoration: none;
     }
 
-    .nav-md-btn a {
-        color: var(--primary-color);
-        font-variant: small-caps;
+    .nav-md-btn:hover{
+        background-color: var(--blue-buttons-color);
+        color:white;
     }
 
 }
