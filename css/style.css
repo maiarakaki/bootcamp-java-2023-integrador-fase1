@@ -6,6 +6,7 @@
     --secondary-color: #70BF44;
     --tertiary-color: #E8E6E6;
     --footer-color: #4c4d4f;
+    --blue-buttons-color:#566fb8;
 }
 
 .poppins{
@@ -17,12 +18,8 @@
     font-size: 1.3rem;
 }
 
-.nav-item a{
+.navbar-nav a{
     text-decoration: none;
-    color:black;
-}
-
-.nav-item a:visited {
     color:black;
 }
 
@@ -110,12 +107,45 @@ footer a{
     #org-logo {
         max-width: 4.5rem;
     }
+
+    .nav-item {
+        padding-left: 2vw;
+    }
+
+    .nav-item:hover{
+        background-color:var(--tertiary-color);
+        color:#3092FC;
+    }
 }
 
 @media screen and (min-width: 768px) {
+    #slogan{
+        color:white;
+    }
     .heading-container {
         background-image: url(/assets/images/heading-bkg-md.jpeg); 
         background-position: top;
+    }
+
+    .nav-md-btn {
+        border: 1px solid var(--blue-buttons-color);
+        font-variant: small-caps;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .nav-md-btn:hover{
+        background-color: var(--blue-buttons-color);
+        color:white;
+    }
+
+
+    .nav-md-btn {
+        border-top-left-radius: 30%;
+        border-bottom-right-radius: 30%;
+        border-top-right-radius: 5%;
+        border-bottom-left-radius: 5%;
+        font-size: 1.2rem;
     }
 
 }
