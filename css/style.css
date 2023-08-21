@@ -77,7 +77,7 @@ footer a{
     width: 50px;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:576px){
     #org-logo {
         max-width: 3.5rem;
     }
@@ -97,6 +97,22 @@ footer a{
         max-height: 150px;
     }
 
+}
+
+@media screen and (min-width:577px) {
+    .heading-container {
+        background-image: url(/assets/images/heading-bkg-md.jpeg);
+        background-size: cover;
+        background-position: center;
+        height: 30vh;
+    }
+
+    #org-logo {
+        max-width: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
     #socials, #address, #slogan-img{
         text-align: center;
     }
