@@ -112,8 +112,17 @@ footer a{
     }
 }
 
+@media screen and (min-width: 768px) {
+    .heading-container {
+        background-image: url(/assets/images/heading-bkg-md.jpeg); 
+        background-position: top;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     #socials, #address, #slogan-img{
         text-align: center;
     }
 }
+
