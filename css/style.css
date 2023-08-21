@@ -101,7 +101,7 @@ footer a{
 
 @media screen and (min-width:577px) {
     .heading-container {
-        background-image: url(/assets/images/heading-bkg-md.jpeg);
+        background-image: url(/assets/images/heading-bkg-sm.jpeg);
         background-size: cover;
         background-position: center;
         height: 30vh;
