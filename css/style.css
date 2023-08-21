@@ -118,6 +118,15 @@ footer a{
         background-position: top;
     }
 
+    .nav-md-btn {
+        border: 1px solid var(--primary-color);
+    }
+
+    .nav-md-btn a {
+        color: var(--primary-color);
+        font-variant: small-caps;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
