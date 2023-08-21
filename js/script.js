@@ -2,20 +2,7 @@ const contactForm = document.getElementById('contact-form');
 const formTextArea = document.querySelector('#form-message');
 const formMaxChars = 200;
 
-const inputIsValid = (input) =>{
-    return input.value.length>0;
-}
 
-const displayValid = (input)=>{
-    input.classList.add("is-valid");
-}
-
-const displayInvalid = (input, id, inputType) => {
-    let feedbackDiv = document.getElementById(id);
-    input.classList.add("is-invalid");
-    input.setCustomValidity(`Por favor ingrese un ${inputType} valido`);
-    feedbackDiv.style.display = "block";
-}
 
 formTextArea.addEventListener("keydown", (e)=>{
     const messageChars = formTextArea.value.length;
@@ -36,21 +23,26 @@ formTextArea.addEventListener("keydown", (e)=>{
 contactForm.addEventListener("submit", (e)=>{
     e.preventDefault();
 
+    const inputIsValid = (input) =>{
+        return input.value.length>0;
+    }
+    
+    const displayValid = (input)=>{
+        input.classList.add("is-valid");
+    }
+    
+    const displayInvalid = (input, id, inputType) => {
+        let feedbackDiv = document.getElementById(id);
+        input.classList.add("is-invalid");
+        input.setCustomValidity(`Por favor ingrese un ${inputType} valido`);
+        feedbackDiv.style.display = "block";
+    }
+
     var formName = document.getElementById('form-name');
     var formEmail = document.getElementById('form-email');
     var formMessage = document.getElementById('form-message');
 
     inputIsValid(formName) ? displayValid(formName) : displayInvalid(formName, "invalid-name", "nombre");
-    
+
     
 });
-
-
-
-function validateEmail(input){
-
-}
-
-function validateMessage(input){
-
-}
