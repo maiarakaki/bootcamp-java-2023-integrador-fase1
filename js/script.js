@@ -2,6 +2,19 @@ const contactForm = document.getElementById('contact-form');
 const formTextArea = document.querySelector('#form-message');
 const formMaxChars = 200;
 
+formTextArea.addEventListener("keydown", (e) => {
+    const messageChars = formTextArea.value.length;
+    const charCounterSpan = document.querySelector('#char-counter');
+
+    if (messageChars > formMaxChars) {
+        formTextArea.classList.add("is-invalid");
+        const feedbackMessage = document.querySelector('#invalid-message');
+        feedbackMessage.style.display = "block";
+    }
+
+    charCounterSpan.textContent = messageChars;
+});
+
 
 const formReset = () => {
 
@@ -16,20 +29,6 @@ const formReset = () => {
         feedbackDiv.style.display = "none";
     }
 }
-
-
-formTextArea.addEventListener("keydown", (e) => {
-    const messageChars = formTextArea.value.length;
-    const charCounterSpan = document.querySelector('#char-counter');
-
-    if (messageChars > formMaxChars) {
-        formTextArea.classList.add("is-invalid");
-        const feedbackMessage = document.querySelector('#invalid-message');
-        feedbackMessage.style.display = "block";
-    }
-
-    charCounterSpan.textContent = messageChars;
-});
 
 
 //Como aplicar EncodeURIComponent() acá???
