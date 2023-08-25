@@ -1,0 +1,16 @@
+@media screen and (min-width: 768px) {
+    @keyframes example {
+        0%   {right:1000px;}
+        25%  {right:750px;}
+        50%  {right:500px;}
+        75%  {right:250px;}
+        100% {left: 0px;}
+      }
+    
+    #slogan{
+        position: relative;
+        animation-name: example;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+    }
+}
