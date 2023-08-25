@@ -150,6 +150,29 @@ footer a{
 
 }
 
+@media screen and (min-width: 992px) {
+    main{
+        padding-top: 90px;
+    }
+    .heading-container {
+        background-image: url(/assets/images/DSC_0935_JPG.jpg); 
+        background-position: top;
+        height: 40vh;
+    }
+
+    .navbar {
+        position:fixed;
+        background-color: white;
+        width: 100vw;
+        z-index: 1;
+        height: 90px;
+    }
+
+    #video-container{
+        z-index: 0;
+    }
+}
+
 @media screen and (max-width: 768px) {
     #socials, #address, #slogan-img{
         text-align: center;
