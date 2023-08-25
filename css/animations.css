@@ -1,16 +1,37 @@
 @media screen and (min-width: 768px) {
-    @keyframes example {
+    @keyframes slide-right {
         0%   {right:1000px;}
-        25%  {right:750px;}
-        50%  {right:500px;}
+        15%  {right:800px;}
         75%  {right:250px;}
         100% {left: 0px;}
       }
+    @keyframes drop{
+        from{bottom: 1000px}
+        to {bottom:0px};
+    }
     
     #slogan{
         position: relative;
-        animation-name: example;
+        animation-name: slide-right;
         animation-duration: 2s;
         animation-timing-function: ease-in;
+    }
+
+    #crecimiento{
+        position: relative;
+        animation-name: drop;
+        animation-duration: 2s;
+    }
+
+    #conocimiento{
+        position: relative;
+        animation-name: drop;
+        animation-duration: 3s;
+    }
+
+    #companerismo{
+        position: relative;
+        animation-name: drop;
+        animation-duration: 4s;
     }
 }
