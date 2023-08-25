@@ -157,8 +157,10 @@ footer a{
         height: 40vh;
     }
 
-    main {
+    main{
         padding-top: 90px;
+        /* margin-left: 10vw;
+        margin-right: 10vw; */
     }
 
     #navbar{
