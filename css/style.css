@@ -156,6 +156,17 @@ footer a{
         background-position: top;
         height: 40vh;
     }
+
+    main {
+        padding-top: 90px;
+    }
+
+    #navbar{
+        position:fixed;
+        background-color: white;
+        width: 100%;
+        z-index: 999;
+    }
 }
 
 @media screen and (max-width: 768px) {
