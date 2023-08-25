@@ -139,13 +139,62 @@ footer a{
         color:white;
     }
 
-
     .nav-md-btn {
         border-top-left-radius: 30%;
         border-bottom-right-radius: 30%;
         border-top-right-radius: 5%;
         border-bottom-left-radius: 5%;
         font-size: 1.2rem;
+    }
+
+    #contact-form{
+        margin-top: -60px;
+    }
+
+}
+
+@media screen and (min-width:992px){
+    .heading-container {
+        background-image: url(/assets/images/DSC_0935_JPG.jpg); 
+        background-position: top;
+        height: 40vh;
+    }
+
+    main{
+        padding-top: 90px;
+    }
+
+    #navbar{
+        position:fixed;
+        background-color: white;
+        width: 100%;
+        z-index: 999;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .heading-container {
+        background-image: url(/assets/images/44686d.jpg); 
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width:1400px){
+    .heading-container {
+        background-image: url(/assets/images/manos.jpg); 
+        background-position: center;
+    }
+
+    #navbar{
+        height:20vh;
+    }
+
+    #org-logo {
+        max-width: 5rem;
+    }
+
+    main{
+        padding-top: 20vh;
     }
 
 }
