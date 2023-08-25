@@ -150,6 +150,14 @@ footer a{
 
 }
 
+@media screen and (min-width:992px){
+    .heading-container {
+        background-image: url(/assets/images/DSC_0935_JPG.jpg); 
+        background-position: top;
+        height: 40vh;
+    }
+}
+
 @media screen and (max-width: 768px) {
     #socials, #address, #slogan-img{
         text-align: center;
