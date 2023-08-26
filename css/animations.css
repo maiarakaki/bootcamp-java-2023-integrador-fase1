@@ -1,37 +1,39 @@
 @media screen and (min-width: 768px) {
-    @keyframes slide-right {
-        0%   {right:1000px;}
-        15%  {right:800px;}
-        75%  {right:250px;}
-        100% {left: 0px;}
-      }
-    @keyframes drop{
-        from{bottom: 1000px}
-        to {bottom:0px};
-    }
-    
-    #slogan{
-        position: relative;
-        animation-name: slide-right;
-        animation-duration: 2s;
-        animation-timing-function: ease-in;
-    }
 
-    #crecimiento{
-        position: relative;
-        animation-name: drop;
-        animation-duration: 2s;
+    @keyframes appear {
+      0%   {opacity:0%;}
+      15%  {opacity:10%;}
+      75%  {opacity:50%;}
+      100% {opacity: 100%;}
     }
+  
+  @keyframes drop{
+      from{bottom: 1000px}
+      to {bottom:0px};
+  }
 
-    #conocimiento{
-        position: relative;
-        animation-name: drop;
-        animation-duration: 3s;
-    }
+  #slogan{
+      position: relative;
+      animation-name: appear;
+      animation-duration: 2s;
+      animation-timing-function: ease-in;
+  }
 
-    #companerismo{
-        position: relative;
-        animation-name: drop;
-        animation-duration: 4s;
-    }
+  #crecimiento{
+      position: relative;
+      animation-name: drop;
+      animation-duration: 1s;
+  }
+
+  #conocimiento{
+      position: relative;
+      animation-name: drop;
+      animation-duration: 1.3s;
+  }
+
+  #companerismo{
+      position: relative;
+      animation-name: drop;
+      animation-duration: 1.5s;
+  }
 }
