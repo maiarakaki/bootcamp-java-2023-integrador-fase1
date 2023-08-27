@@ -1,3 +1,23 @@
 .activity-sample{
-    max-width: 300px;
+    max-width: 300px !important;
 }
+
+h1{
+    font-weight: bold;
+}
+
+.b-highlight{
+    display: block;
+    width: fit-content;
+}
+
+p{
+    font-weight: 100;
+    text-align: justify;
+}
+
+/* @media screen and (min-width:992px){
+    #actividad-pedagogica{
+        max-width: 60vw;
+    }
+} */
