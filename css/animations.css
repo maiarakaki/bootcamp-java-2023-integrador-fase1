@@ -12,6 +12,27 @@
       to {bottom:0px};
   }
 
+  @keyframes slide-in {
+    from{
+        left: 200%;
+        opacity:10%
+    }
+    to{
+        left:0%;
+        opacity: 100%;
+    }
+  }
+
+  #navbar{
+    padding:1px;
+  }
+
+  .values-container h2{
+    position: relative;
+    animation-name: slide-in;
+    animation-duration: 2s;
+  }
+
   #slogan{
       position: relative;
       animation-name: appear;
