@@ -28,6 +28,21 @@ p{
     font-size: 0.9rem;
 }
 
+#join-banner{
+    height: 55vh;
+    background-image: url(../assets/images/join.jpeg);
+    background-size: cover;
+}
+
+#join-banner h1{
+    color:white;
+    font-size:3.5rem;
+}
+
+.b-highlight{
+    display: block;
+}
+
 @media screen and (max-width:768px) {
     .project-img{
         max-width:50vw;
