@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/activities.css">
     <link rel="stylesheet" href="../css/animations.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -67,7 +68,7 @@
         </div>
         <div class="row mt-2 mb-3 mx-5 px-md-5" id="actividad-pedagogica">
             <div class="row justify-content-center">
-                <div class="col-4">
+                <div class="col-7 col-sm-6 order-1 order-sm-0">
                     <img class="d-block activity-sample" src="../assets/images/LSA.jpg" alt="niños mostrando alfabeto de lengua de señas">
                 </div>
                 <div class="col-6">
@@ -78,13 +79,27 @@
                             Además aprenden lenguaje de señas Argentina como un nuevo idioma, buscando la estimulación de la creatividad, la expresión y la inclusión.  </p>
                     </div>
                 </div>
-                <div class="col-12">
-                    <!-- carrousel placeholder -->
+                <div class="col-12 order-3 my-md-5">
+                    <div class="swiffy-slider slider-item-show2 slider-item-reveal slider-nav-autoplay">
+                        <ul class="slider-container">
+                            <li><img class="carrousel-img" src="../assets/images/LSAR.jpg"></li>
+                            <li><img class="carrousel-img" src="../assets/images/maestra-ayuda.jpg"></li>
+                            <li><img class="carrousel-img" src="../assets/images/LSAW.jpg"></li>
+                            <li><img class="carrousel-img" src="../assets/images/maestra-ayuda2.jpg"></li>
+                        </ul>
+                    
+                        <button type="button" class="slider-nav"></button>
+                        <button type="button" class="slider-nav slider-nav-next"></button>
+                    
+                        <div class="slider-indicators">
+                            <button class="active"></button>
+                            <button></button>
+                            <button></button>
+                        </div>
+                    </div>
                     
                 </div>
             </div>
-   
-            
         </div>
 
     </main>
@@ -161,7 +176,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+
 </body>
 
 </html>

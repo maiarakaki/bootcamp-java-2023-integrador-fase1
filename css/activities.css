@@ -1,5 +1,5 @@
 .activity-sample{
-    max-width: 300px !important;
+    width: 100%;
 }
 
 h1{
@@ -16,8 +16,7 @@ p{
     text-align: justify;
 }
 
-/* @media screen and (min-width:992px){
-    #actividad-pedagogica{
-        max-width: 60vw;
-    }
-} */
+.carrousel-img{
+    max-width: 100%;
+    max-height: 20em;
+}
