@@ -18,5 +18,9 @@ p{
 
 .carrousel-img{
     max-width: 100%;
-    max-height: 20em;
+    height: auto;
+}
+
+#deportiva{
+    background-color: #f7f7f7;
 }
