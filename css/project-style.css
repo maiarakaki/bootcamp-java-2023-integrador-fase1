@@ -27,3 +27,11 @@ p{
 .axis-txt{
     font-size: 0.9rem;
 }
+
+@media screen and (max-width:768px) {
+    .project-img{
+        max-width:50vw;
+        display:block;
+        margin:auto;
+    }
+}
