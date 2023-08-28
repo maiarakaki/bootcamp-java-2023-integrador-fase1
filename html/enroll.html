@@ -84,7 +84,7 @@
                             <input type="text" class="form-control" 
                                 id="enroll-form-name" 
                                 placeholder="Nombre y apellido del responsable"
-                                >
+                                required>
                             <label for="enroll-form-name">
                                 Nombre y apellido del responsable
                             </label>
@@ -97,7 +97,7 @@
                             class="form-control" 
                             id="enroll-form-student-name" 
                             placeholder="Nombre y apellido del alumno"
-                            >
+                            required>
                             <label for="enroll-form-student-name">Nombre y apellido del alumno</label>
                         </div>
                         <div class="invalid-feedback" id="enroll-invalid-student-name">
@@ -109,7 +109,7 @@
                             class="form-control" 
                             id="enroll-form-email" 
                             placeholder="alguien@ejemplo.com"
-                            >
+                            required>
                             <label for="enroll-form-email">Email</label>
                         </div>
                         <div class="invalid-feedback" id="enroll-invalid-email">
@@ -122,7 +122,7 @@
                             id="enroll-form-phone" 
                             placeholder="##-####-####"
                             pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" 
-                            >
+                            required>
                             <label for="enroll-form-phone">Teléfono</label>
                         </div>
                         <div class="invalid-feedback" id="enroll-invalid-phone">
@@ -146,7 +146,7 @@
                                 id="enroll-form-message" 
                                 placeholder="Escriba su mensaje aquí"
                                 maxlength="201" 
-                                ></textarea>
+                                required></textarea>
                             <label for="enroll-form-message">Mensaje</label>
                         </div>
                         <div class="invalid-feedback" id="invalid-enroll-message">
