@@ -68,15 +68,93 @@
             <h1>Inscripciones 2024</h1>
             <div class="row" id="requisitos">
                 <h2>Requisitos de inscripción</h2>
-                <ul>
-                    <li>Tener entre 5 y hasta 11 años</li>
-                    <li>Tener acompañamiento de la familia durante el ciclo lectivo</li>
-                </ul>
+                <p>
+                    <ul>
+                        <li>Tener entre 5 y hasta 11 años</li>
+                        <li>Tener acompañamiento de la familia durante el ciclo lectivo</li>
+                    </ul>
+                </p>
             </div>
             <div class="row">
                 <h2>Formulario de inscripción</h2>
                 <div class="col">
                     <!-- form placeholder -->
+                    <form id="enroll-form">
+                        <div class="form-floating mt-3">
+                            <input type="text" class="form-control" 
+                                id="enroll-form-name" 
+                                placeholder="Nombre y apellido del responsable"
+                                >
+                            <label for="enroll-form-name">
+                                Nombre y apellido del responsable
+                            </label>
+                        </div>
+                        <div class="invalid-feedback" id="enroll-invalid-name">
+                            Por favor ingrese su nombre.
+                        </div>
+                        <div class="form-floating mt-3">
+                            <input type="text" 
+                            class="form-control" 
+                            id="enroll-form-student-name" 
+                            placeholder="Nombre y apellido del alumno"
+                            >
+                            <label for="enroll-form-student-name">Nombre y apellido del alumno</label>
+                        </div>
+                        <div class="invalid-feedback" id="enroll-invalid-student-name">
+                            Por favor ingrese el nombre del alumno.
+                        </div>
+                        
+                        <div class="form-floating mt-3">
+                            <input type="email" 
+                            class="form-control" 
+                            id="enroll-form-email" 
+                            placeholder="alguien@ejemplo.com"
+                            >
+                            <label for="enroll-form-email">Email</label>
+                        </div>
+                        <div class="invalid-feedback" id="enroll-invalid-email">
+                            Por favor ingrese su email.
+                        </div>
+                        
+                        <div class="form-floating mt-3">
+                            <input type="tel" 
+                            class="form-control" 
+                            id="enroll-form-phone" 
+                            placeholder="##-####-####"
+                            pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" 
+                            >
+                            <label for="enroll-form-phone">Teléfono</label>
+                        </div>
+                        <div class="invalid-feedback" id="enroll-invalid-phone">
+                            Por favor ingrese su Teléfono<br>
+                            <small>11-1234-5678</small>
+                        </div>
+                        
+                        <div class="form-floating mt-3">
+                            <select class="form-select" 
+                            id="floatingSelect" 
+                            aria-label="Floating label select example">
+                            <option value="am">Mañana</option>
+                            <option value="pm">Tarde</option>
+                            </select>
+                            <label for="floatingSelect">Turno</label>
+                        </div>
+                    
+                        <div class="form-floating  mt-3">
+                            <textarea 
+                                class="form-control" 
+                                id="enroll-form-message" 
+                                placeholder="Escriba su mensaje aquí"
+                                maxlength="201" 
+                                ></textarea>
+                            <label for="enroll-form-message">Mensaje</label>
+                        </div>
+                        <div class="invalid-feedback" id="invalid-enroll-message">
+                            Por favor incluya un mensaje menor a 200 caracteres.
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                    </form>
                 </div>
 
             </div>
@@ -93,7 +171,7 @@
                 <!-- formulario -->
                 <form id="contact-form">
                     <div class="form-floating mt-3">
-                        <input type="text" class="form-control" id="form-name" placeholder="Nombre completo">
+                        <input type="text" class="form-control" id="form-name" placeholder="Nombre completo" required>
                         <label for="form-name">Nombre</label>
                     </div>
                     <div class="invalid-feedback" id="invalid-name">
@@ -152,6 +230,7 @@
         </div>
     </footer>
     <script src="../js/script.js"></script>
+    <script src="../js/enroll-script.js"></script>
     <script src="https://kit.fontawesome.com/dfcc5cbe77.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
