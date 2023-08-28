@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+:root{
+    /* colors */
+    --primary-color: #3092FC;
+    --secondary-color: #70BF44;
+    --tertiary-color: #E8E6E6;
+    --footer-color: #4c4d4f;
+    --blue-buttons-color:#566fb8;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 3rem;
+}
