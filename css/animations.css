@@ -57,4 +57,10 @@
       animation-name: drop;
       animation-duration: 1.5s;
   }
+
+  .sponsor-img{
+    position: relative;
+    animation-name: slide-in;
+    animation-duration: 2s;
+  }
 }
